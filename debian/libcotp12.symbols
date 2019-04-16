@@ -1,0 +1,9 @@
+libcotp.so.12 libcotp12 #MINVER#
+* Build-Depends-Package: libcotp-dev
+ get_hotp@Base 1.2.2
+ get_steam_totp@Base 1.2.2
+ get_steam_totp_at@Base 1.2.2
+ get_totp@Base 1.2.2
+ get_totp_at@Base 1.2.2
+ hotp_verify@Base 1.2.2
+ totp_verify@Base 1.2.2

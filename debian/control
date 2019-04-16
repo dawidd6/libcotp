@@ -1,0 +1,38 @@
+Source: libcotp
+Priority: optional
+Maintainer: Dawid Dziurla <dawidd0811@gmail.com>
+Build-Depends:
+ debhelper-compat (= 12),
+ cmake,
+ pkg-config,
+ libbaseencode-dev,
+ libgcrypt20-dev,
+Standards-Version: 4.3.0.1
+Section: libs
+Homepage: https://github.com/paolostivanin/libcotp
+
+Package: libcotp-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends:
+ libcotp12 (= ${binary:Version}),
+ ${misc:Depends},
+Description: C library that generates TOTP and HOTP (development files)
+ C library that generates TOTP and HOTP according
+ to RFC-6238.
+ .
+ This package contains the files needed to
+ compile and link programs which use this library.
+
+Package: libcotp12
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+Description: C library that generates TOTP and HOTP
+ C library that generates TOTP and HOTP according
+ to RFC-6238.
+ .
+ This package contains shared library object.
